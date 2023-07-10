@@ -8,12 +8,22 @@ export default function RestCard({ restaurant }) {
             uri: restaurant.photo_url,
             cache: 'force-cache',
           }} />
-      <Text style={styles.title}>{restaurant.name}</Text>
+      <Text style={styles.title}>{restaurant.name}</Text>      
+      {
+        (restaurant?.rating.length > 0)
+          ? <Text style={styles.rating}>{"⭐️".repeat(restaurant.rating[0])}</Text>
+          : null
+      }      
     </View>
   )
 }
 
 const styles = StyleSheet.create({
+  rating: {
+    fontSize: 20,
+    textAlign: 'center',
+    marginTop: 9,
+  },
   image: {
     width: '100%',
     height: 200,

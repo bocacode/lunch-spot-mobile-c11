@@ -9,7 +9,7 @@ export default function App() {
   return (
     <>
       <View style={styles.container}>
-        <Text style={styles.header}>Lunch Spot 🌮</Text>
+        <Text style={styles.header}>Boca Raton Lunch Spot </Text>
         <RestList selectedRestaurant={selectedRestaurant} />
         <StatusBar style='auto' />
       </View>
