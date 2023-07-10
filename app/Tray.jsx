@@ -12,7 +12,7 @@ export default function Tray({ setSelectedRestaurant }) {
     <View style={styles.tray}>
       <View style={styles.buttonList}>
         <TouchableOpacity onPress={choose} style={styles.button}>
-          <Text style={styles.buttonText}>Shuffle 🎲</Text>
+          <Text style={styles.buttonText}>Shuffle Now 🎲</Text>
         </TouchableOpacity>
         <TouchableOpacity onPress={clear} style={[styles.button, styles.resetButton]}>
           <Text style={[styles.buttonText, styles.resetButtonText]}>Reset</Text>
@@ -51,9 +51,19 @@ const styles = StyleSheet.create({
   tray: {
     width: '100%',
     backgroundColor: '#e9eeff',
-    height: 70,
-    paddingBottom: 10,
+    height: 120,
+    paddingTop: 30,
+    paddingBottom: 30,
     alignItems: 'center',
     justifyContent: 'center',
-  }
+
+    shadowColor: "#000",
+    shadowOffset: {
+        width: 0,
+        height: -10,
+    },
+    shadowOpacity: 0.11,
+    shadowRadius: 9.5,
+    elevation: 15,
+    }
 })

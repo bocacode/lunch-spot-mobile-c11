@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     height: 200,
     borderRadius: 6,
     borderWidth: 3,
-    borderColor: '#a3a3a3',
+    borderColor: '#cccccc',
     borderStyle: 'solid',
   },
 
@@ -28,6 +28,14 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     paddingVertical: 16,
     marginBottom: 12,
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 7,
+    },
+    shadowOpacity: 0.28,
+    shadowRadius: 5.51,
+    elevation: 15,
   },
 
   title: {
