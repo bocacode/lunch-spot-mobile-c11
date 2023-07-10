@@ -34,16 +34,19 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   button: {
-    backgroundColor: '#786dbb',
-    paddingHorizontal: 24,
-    paddingVertical: 8,
-    borderRadius: 4,
+    backgroundColor: '#ed714d',
+    paddingHorizontal: 30,
+    paddingVertical: 10,
+    borderRadius: 20,
+    borderWidth: 2,
+    borderStyle: 'solid',
+    borderColor: '#f79477',
   },
   resetButtonText: {
-    color: '#333',
+    color: '#777',
   },
   resetButton: {
-    backgroundColor: '#ccc',
+    backgroundColor: '#f4f5f6',
   },
   tray: {
     width: '100%',

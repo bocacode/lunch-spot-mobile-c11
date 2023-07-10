@@ -22,12 +22,13 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     paddingTop: 60,
-    backgroundColor: '#483d8b',
+    backgroundColor: '#f4f5f6',
     alignItems: 'center',
     justifyContent: 'flex-start',
   },
   header: {
-    color: 'white',
+    color: '#232323',
     fontSize: 30,
+    fontWeight: 800
   },
 })

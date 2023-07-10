@@ -18,16 +18,23 @@ const styles = StyleSheet.create({
     width: '100%',
     height: 200,
     borderRadius: 6,
+    borderWidth: 3,
+    borderColor: '#a3a3a3',
+    borderStyle: 'solid',
   },
-  card: {
-    padding: 8,
-    margin: 8,
+
+  card: {    
     borderRadius: 12,
-    backgroundColor: '#e9eeff',
+    paddingHorizontal: 10,
+    paddingVertical: 16,
+    marginBottom: 12,
   },
+
   title: {
     color: '#203040',
     fontSize: 20,
+    fontWeight: 700,
     textAlign: 'center',
+    marginTop: 12,
   },
 })
