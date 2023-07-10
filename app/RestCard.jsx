@@ -3,7 +3,11 @@ import { View, Image, Text, StyleSheet } from "react-native"
 export default function RestCard({ restaurant }) {
   return (
     <View style={styles.card}>
-      <Image style={styles.image} src={restaurant.photo_url} />
+      <Image style={styles.image}
+          source={{
+            uri: restaurant.photo_url,
+            cache: 'force-cache',
+          }} />
       <Text style={styles.title}>{restaurant.name}</Text>
     </View>
   )
@@ -23,7 +27,7 @@ const styles = StyleSheet.create({
   },
   title: {
     color: '#203040',
-    fontSize: 28,
+    fontSize: 20,
     textAlign: 'center',
   },
 })

@@ -6,16 +6,16 @@ export default function Tray({ setSelectedRestaurant }) {
     setSelectedRestaurant(chosen)
   }
   const clear = () => {
-    setSelectedRestaurant(0)
+    setSelectedRestaurant(null)
   }
   return (
     <View style={styles.tray}>
       <View style={styles.buttonList}>
         <TouchableOpacity onPress={choose} style={styles.button}>
-          <Text style={styles.buttonText}>Choose</Text>
+          <Text style={styles.buttonText}>Shuffle 🎲</Text>
         </TouchableOpacity>
-        <TouchableOpacity onPress={clear} style={styles.resetButton}>
-          <Text style={styles.resetButtonText}>Reset</Text>
+        <TouchableOpacity onPress={clear} style={[styles.button, styles.resetButton]}>
+          <Text style={[styles.buttonText, styles.resetButtonText]}>Reset</Text>
         </TouchableOpacity>
       </View>
     </View>
@@ -34,21 +34,16 @@ const styles = StyleSheet.create({
     fontWeight: '600',
   },
   button: {
-    backgroundColor: '#ff216e',
+    backgroundColor: '#786dbb',
     paddingHorizontal: 24,
     paddingVertical: 8,
     borderRadius: 4,
   },
   resetButtonText: {
     color: '#333',
-    fontSize: 20,
-    fontWeight: '600',
   },
   resetButton: {
     backgroundColor: '#ccc',
-    paddingHorizontal: 24,
-    paddingVertical: 8,
-    borderRadius: 4,
   },
   tray: {
     width: '100%',
